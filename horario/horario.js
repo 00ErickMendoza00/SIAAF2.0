@@ -5,7 +5,7 @@ document.querySelector(".btn").addEventListener("click", function() {
 
 // Redirige a la página de Login
 document.querySelector(".logout").addEventListener("click", function() {
-    window.location.href = "../Login/login.html";
+    window.location.href = "../login/login.html";
 });
 
 // Redirige a la página de Menú al hacer clic en el botón de regreso

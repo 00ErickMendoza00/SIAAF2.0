@@ -1,7 +1,7 @@
  // Redirige a Login.html al hacer clic en el enlace de Cerrar sesión
  document.getElementById("logout").addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "../Login/login.html";
+    window.location.href = "../login/login.html";
 });
 
   // Redirige a horario.html al hacer clic en la imagen de horario
