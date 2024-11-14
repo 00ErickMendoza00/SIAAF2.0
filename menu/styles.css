@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+.logo {
+    height: 100px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between; /* Coloca el texto y el icono en los extremos */
+    align-items: center; /* Alinea verticalmente el texto y el icono */
+    padding: 10px;
+    
+}
+
+.info-text {
+    font-size: 14px;
+    color: #333;
+     margin-right: 20px; /* Agrega margen derecho entre el texto y la imagen */
+}
+
+.info-icon {
+    width: 40px; /* Tamaño del icono */
+    height: 40px;
+    border-radius: 50%; /* Haz el ícono redondo si es necesario */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el enlace de cerrar sesión */
+.logout {
+    color: #cc0033; /* Color rojo */
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.update-data {
+    color: #007BFF; /* Azul para el enlace */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.update-data:hover {
+    text-decoration: underline; /* Subraya al pasar el ratón */
+}
+.logout:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.profile-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #003366;
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #003366;
+    border-bottom: 1px solid #003366;
+}
+
+.main {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 900px;
+    margin-top: 20px;
+}
+
+.card {
+    text-align: center;
+    width: 120px;
+    display: flex;            /* Activamos el modelo flex */
+    flex-direction: column;   /* Alineamos los elementos de arriba hacia abajo */
+    align-items: center;      /* Centra los elementos horizontalmente */
+    justify-content: center;  /* Centra los elementos verticalmente si es necesario */
+    text-align: center;       /* Centra el texto en el contenedor */
+}
+
+#horario {
+    cursor: pointer;  /* Cambia el cursor a la mano cuando el mouse pasa sobre la imagen */
+}
+
+#matricula {
+    cursor: pointer;  /* Cambia el cursor a la mano cuando el mouse pasa sobre la imagen */
+}
+
+.card img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #333;
+}

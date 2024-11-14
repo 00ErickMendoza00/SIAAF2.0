@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión - UNICUCES</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div class="login-container">
+        <img src="../imagenes/unicuces.png" alt="Logo UNICUCES" class="logo">
+        
+
+        <form class="login-form" id="loginForm">
+            <div class="input-group">
+                <img src="../imagenes/usuarioLogin.png" alt="Usuario" class="icon">
+                <input type="text" placeholder="Usuario" class="input-field" id="usuario">
+            </div>
+            <div class="input-group">
+                <img src="../imagenes/contrasena.png" alt="Contraseña" class="icon">
+                <input type="password" placeholder="Contraseña" class="input-field" id="contrasena">
+            </div>
+            <button type="submit" class="login-button">Ingresar</button>
+            <a href="#" class="forgot-password" id="recuperarClave">¿Olvidó su contraseña?</a>
+        </form>
+
+        <!-- Formulario de recuperación de contraseña oculto al inicio -->
+        <form class="recovery-form" id="claveForm" style="display: none;">
+            <div class="input-group">
+                <input type="number" placeholder="Número de cédula" class="input-field" id="cedula">
+            </div>
+            <button type="button" class="recovery-button" id="claveBoton">Enviar</button>
+        </form>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario - UNICUCES</title>
+    <link rel="stylesheet" href="horario.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../imagenes/unicuces.png" alt="Logo UNICUCES" class="logo">
+       
+        <div class="info-container">
+        <div class="info-text">
+        <p>Erick Mendoza Palacio</p>
+        <p>Horas de bienestar: 50 horas</p>
+        <p>
+            <a href="#" class="update-data">Actualizar datos</a><br> 
+            <a href="#" id="logout" class="logout">Cerrar sesión</a>
+        </p>
+        </div>
+        <img src="../imagenes/usuario.png" alt="Icono de usuario" class="info-icon">
+        </div>
+    </header>
+
+    <hr class="divider">
+
+    <nav class="nav">
+            <a href="#"><img src="../imagenes/regresar.png" alt="Retroceder"></a>
+            <span>Horario</span> 
+    </nav>
+    
+    <main>
+        
+        
+        <section class="program-info">
+            <p>Programa: Tecnología en desarrollo de software -</p>
+            <p>Semestre: 6TO -</p>
+            <p>Periodo: 2024 - 2 </p>
+        </section>
+        
+        <div class="schedule-container">
+            <div class="schedule">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>HORAS</th>
+                            <th>LUNES</th>
+                            <th>MARTES</th>
+                            <th>MIÉRCOLES</th>
+                            <th>JUEVES</th>
+                            <th>VIERNES</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>06:15 - 07:00</td>
+                            <td>(1) - Aula 151<br>Seminario de investigación aplicada</td>
+                            <td class="libre">LIBRE</td>
+                            <td>(2) - Aula 610<br>Ingeniería del software</td>
+                            <td>(4) - Aula 610<br>Gestión de bases de datos</td>
+                            <td>(5) - Aula 133<br>Arquitectura de computadoras</td>
+                        </tr>
+                        <tr>
+                            <td>07:00 - 07:45</td>
+                            <td>(1) - Aula 151<br>Seminario de investigación aplicada</td>
+                            <td>(3) - Aula 151<br>Física III</td>
+                            <td>(2) - Aula 610<br>Ingeniería del software</td>
+                            <td>(4) - Aula 610<br>Gestión de bases de datos</td>
+                            <td>(5) - Aula 133<br>Arquitectura de computadoras</td>
+                        </tr>
+                        <tr>
+                            <td>08:00 - 08:45</td>
+                            <td class="libre">LIBRE</td>
+                            <td>(3) - Aula 151<br>Física III</td>
+                            <td>(4) - Aula 610<br>Gestión de bases de datos</td>
+                            <td>(5) - Aula 133<br>Arquitectura de computadoras</td>
+                            <td class="libre">LIBRE</td>
+                        </tr>
+                        <tr>
+                            <td>08:45 - 09:30</td>
+                            <td class="libre">LIBRE</td>
+                            <td>(3) - Aula 151<br>Física III</td>
+                            <td class="libre">LIBRE</td>
+                            <td class="libre">LIBRE</td>
+                            <td class="libre">LIBRE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <aside class="sidebar">
+                <button class="btn">Horario Profesoral</button>
+                <div class="description">
+                    <h3>Descripción Horario</h3>
+                    <ul>
+                        <li>(1) - Seminario de investigación aplicada<br>Lunes 06:15 - 07:45, Aula (151)<br>Docente: Ingrid Vaneza Cañizares Narváez</li>
+                        <li>(2) - Ingeniería del software<br>Lunes 08:00 - 08:45, Aula (610)<br>Miércoles 06:15 - 07:45, Aula (610)<br>Docente: Carolina Hurtado Quintana</li>
+                        <li>(3) - Física III<br>Martes 07:00 - 09:30, Aula (151)<br>Docente: Armando Ruiz Perea</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <script src="horario.js" defer></script>
+</body>
+</html>

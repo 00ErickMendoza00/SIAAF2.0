@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial,sans-serif;
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #ffffff;
+}
+
+.logo {
+    height: 100px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-between; /* Coloca el texto y el icono en los extremos */
+    align-items: center; /* Alinea verticalmente el texto y el icono */
+    padding: 10px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #333;
+     margin-right: 20px; /* Agrega margen derecho entre el texto y la imagen */
+}
+
+.info-icon {
+    width: 40px; /* Tamaño del icono */
+    height: 40px;
+    border-radius: 50%; /* Haz el ícono redondo si es necesario */
+    margin-bottom: 20px;
+}
+
+/* Estilo para el enlace de cerrar sesión */
+.logout {
+    color: #cc0033; /* Color rojo */
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.update-data {
+    color: #007BFF; /* Azul para el enlace */
+    text-decoration: none; /* Elimina el subrayado por defecto */
+}
+
+.update-data:hover {
+    text-decoration: underline; /* Subraya al pasar el ratón */
+}
+.logout:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #003366;
+}
+
+.nav {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #003366;
+    border-bottom: 1px solid #003366;
+    display: flex;
+    align-items: center; /*Alineamos verticalmente el contenido al centro */
+    gap: 10px;/* Añadimos espacio entre la imagen y el texto */
+
+}
+
+.nav img {
+    height: 20px; /* Ajusta el tamaño de la imagen si es necesario */
+    width: auto; /* Mantenemos la proporción de la imagen */
+}
+
+.nav span{
+    font-size: 16px; /* Ajusta el tamaño del texto según las necesidades */
+}
+
+.content {
+    padding: 20px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.search-section label {
+    font-weight: bold;
+}
+
+.search-section select, .search-section input[type="date"] {
+    padding: 5px;
+}
+
+.consult-button {
+    padding: 8px 15px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.consult-button:hover {
+    background-color: #00264d;
+}
+
+.clear-button {
+    padding: 8px 15px;
+    background-color: #808080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.clear-button:hover {
+    background-color: #00264d;
+}
+
+.schedule-table {
+    overflow-x: auto;
+}
+
+.schedule-table table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.schedule-table th, .schedule-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.schedule-table thead th {
+    background-color: #ff4d4d;
+    color: white;
+    font-weight: bold;
+}
+
+#docenteTabla {
+    background-color: blue;   /* Cambia el color de fondo a azul */
+    color: white;             /* Cambia el color del texto a blanco para mejor contraste */
+}
+
+
+.schedule-table tbody td:first-child {
+    font-weight: bold;
+    background-color: #f4f4f4;
+}

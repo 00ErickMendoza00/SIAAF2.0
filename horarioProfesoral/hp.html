@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horario / Horario profesoral - UNICUCES</title>
+    <link rel="stylesheet" href="hp.css">
+</head>
+<body>
+    <header class="header">
+        <img src="../imagenes/unicuces.png" alt="Logo UNICUCES" class="logo">
+        
+        <div class="info-container">
+        <div class="info-text">
+            <p>Erick Mendoza Palacio</p>
+            <p>Horas de bienestar: 50 horas</p>
+            <p>
+                <a href="#" class="update-data">Actualizar datos</a><br> 
+                <a href="#" id="logout" class="logout">Cerrar sesión</a>
+            </p>
+        </div>
+        <img src="../imagenes/usuario.png" alt="Icono de usuario" class="info-icon">
+    </div>
+    </header>
+
+    <hr class="divider">
+
+    <nav class="nav">
+        <a href="#" ><img src="../imagenes/regresar.png" alt="Retroceder"> </a>
+        <span>Horario / Horario profesoral</span> 
+    </nav>
+
+    <main class="content">
+        <section class="search-section">
+            <label for="docente">Docente:</label>
+            <select id="docente">
+                <option value=" ">Nombre del docente</option>
+                <option value="p1">Carolina Hurtado Quintana</option>
+                <option value="p2">Ingrid Vaneza Cañizares Narváez</option>
+                <option value="p3"> Armando Ruiz Perea</option>
+            </select>
+
+            <button class="consult-button" onclick="mostrarHorario()">CONSULTAR</button>
+            <button class="clear-button" onclick="limpiarFormulario()">LIMPIAR</button>
+        </section>
+
+        <section class="schedule-table">
+            <table id="tabla" style="display: none;">
+                <thead>
+                    <tr>
+                        <th id="docenteTabla">Nombre del docente</th>
+                        <th>LUNES</th>
+                        <th>MARTES</th>
+                        <th>MIERCOLES</th>
+                        <th>JUEVES</th>
+                        <th>VIERNES</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>06:15 - 07:00</td>
+                    </tr>
+                    <tr>
+                        <td>07:00 - 07:45</td>
+                    </tr>
+                    <tr>
+                        <td>08:00 - 08:45</td>
+                    </tr>
+                    <tr>
+                        <td>08:45 - 09:30</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="hp.js" defer></script>
+</body>
+</html>
