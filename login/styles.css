@@ -98,15 +98,20 @@ body {
     text-decoration: underline;
 }
 
-
-.recovery-button {
-    padding: 8px 15px;
-    background-color: #808080;
-    color: white;
-    border: none;
-    cursor: pointer;
+.button-container {
+    display: flex;               /* Alinea los botones en una fila */
+    justify-content: space-between; /* Espacio entre los botones */
+    gap: 10px;                    /* Espacio entre los botones */
 }
 
-.recovery-button:hover {
-    background-color: #00264d;
+.recovery-button, .back-button {
+    width: 28%;                   /* Los botones ocupan el 48% del contenedor */
+    padding: 10px;
+    background-color: #003366;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
